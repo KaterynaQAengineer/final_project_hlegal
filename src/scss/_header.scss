@@ -1,0 +1,156 @@
+// styles for header
+
+.header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
+	z-index: 5;
+
+
+	&__top-line {
+		background: rgba(245, 245, 250, 0.2);
+		display: flex;
+		justify-content: space-between;
+		padding: 8px 15px;
+		align-items: center;
+
+		@media (min-width: $breakpoint-md) {
+			justify-content: flex-start;
+			background: none;
+			padding: 50px 45px 15px;
+		}
+
+		@media (min-width: $breakpoint-lg){
+		justify-content: flex-end;
+		}
+
+		>li+li {
+			@media (min-width: 768px){
+			position: relative;
+			padding-left: 20px;
+			&:before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				position: absolute;
+				left: 7px;
+				top: 10px;
+				background: #fff;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	a {
+		color: inherit;
+	}
+
+}
+	&__lang-list {
+		display: flex;
+		font-style: 12px;
+		font-weight: 700;
+	}
+	&__lang-item {
+		margin: 0 5px;
+	}
+	&__lang-link {
+		border-radius: $radius-sm;
+		padding: 5px 7px;
+		display: inline-block;
+
+		&.active {
+			background: #F0145A;
+		}
+	}
+	&__tel {
+		font-size: 16px;
+		font-weight: 700px;
+	}
+	&__bottom-line {
+		display: flex;
+		justify-content: space-between;
+		padding: 15px;
+		@media (min-width: $breakpoint-md) {
+			padding: 10px 40px;
+			flex-direction: column;
+		}
+		@media (min-width: $breakpoint-lg) {
+			align-items: flex-end;
+		}
+	}
+	&__burger {
+		@media (min-width: $breakpoint-md) {
+			display: none;
+		}
+	}
+	&__logo {
+		margin-bottom: 20px;
+		@media (min-width: $breakpoint-lg) {
+			position: absolute;
+			left: 40px;
+			top: 50px;
+			transform: translateY(50%);
+		}
+	}
+}
+
+.header__menu {
+	@media (max-width: $breakpoint-md) {
+	position: fixed;
+	transform: translateY(120%);
+	bottom: 0;
+	left: 8px;
+	right: 8px;
+	background: #fff;
+	padding: 64px 12px 12px;
+	text-align: center;
+	border-radius: 12px 12px 0 0;
+	transition: transform 0.2s linear;
+	}
+	
+	&.active {
+		transform: translateY(0);
+	}
+
+	&-close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+		@media (min-width: $breakpoint-md) {
+			display: none;
+			
+		}
+	}
+	&-list{
+		@media (min-width: $breakpoint-md) {
+			display: flex;
+		}
+		
+	}	
+	&-item {
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint-md) {
+			margin: 0 15px 0 0;
+		}
+	}
+	&-link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.2;
+		text-transform: lowercase;
+		color: $basic-white;
+
+		@media (max-width: $breakpoint-md) {
+		background: #F5F5FA;
+		color: $regular-color;
+		display: block;
+		padding: 15px;
+		border-radius: $radius-md;
+	}
+}
+}

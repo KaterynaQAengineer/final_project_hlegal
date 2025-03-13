@@ -1,19 +1,30 @@
-:root {
-	--main-color:  #323264;
-	--second-color: #46466E;
-	--mute-color: #686887;
-	--main-text-color: #000; 
-	--accent-color: #F0145A;
 
-	// --second-text-color: rgba(235, 235, 245, .6);
-	// --hero-name-background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-	// --brand-color: #646cff;
-	// --brand-light-color: #747bff;
-}
-// [data-theme="light"] {
-// 	--main-color: rgba(255, 255, 245, .86);
-// 	--second-color: #fff;
-// 	--mute-color: rgba(235, 235, 245, .6);
-// 	--main-text-color: #161618;
-// 	--second-text-color: #1e1e20;
-// }
+	$main-color:  #323264;
+	$alt-color: #46466E;
+	$soft-color: #686887;
+	$accent-color: #F0145A;
+	$regular-color:#24a3ff;
+	$hover-color: #0085ff;
+	$active-color: #006ccf;
+	$bg-color: #f5f5fa;
+	$bg-alt-color: #ededf7;
+	$text-color:#b3b3ba;
+	$basic-white: #ffffff;
+	$separator-color: #e6e6f0;
+	$gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+	$gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    $gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+	$gradient-suppersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+	$gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+
+// boreder-radius
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-rounded: 50%;
+
+// breakpoints
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
