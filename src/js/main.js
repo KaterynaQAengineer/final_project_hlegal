@@ -1,5 +1,11 @@
-import '../scss/style.scss'
 
+
+import Swiper from "swiper";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import "swiper/css";
+import "../scss/style.scss";
 (function () {
     const isOpen = document.querySelector(".header__burger");
     const isClose = document.querySelector(".header__menu-close");
@@ -47,3 +53,11 @@ import '../scss/style.scss'
     });
   });
 })();
+
+const swiper = new Swiper('.swiper', {
+    modules: [Pagination],
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+  });

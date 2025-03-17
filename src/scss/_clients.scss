@@ -1,0 +1,48 @@
+
+.clients {
+    margin-left: -30px;  
+    margin-right: -30px; 
+    @media (min-width: $breakpoint-md) {
+        margin-left: -60px;  
+    margin-right: -60px; 
+    }
+    h3 {
+        text-align: center;
+    }
+    .caps {
+        margin-bottom: 30px;
+    }
+
+   &__list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    
+   }
+   @media (min-width: $breakpoint-md) {
+    &__item {
+        width: 25%;
+        flex-shrink: 0;
+       }
+   }
+
+    &__link {
+        height: 120px;
+        padding: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }   
+}
+
+    
+

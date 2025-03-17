@@ -1,0 +1,45 @@
+.services {
+   
+    h1, &__description, &__list {
+        padding-bottom: 30px;
+    }
+
+    &__icon, &__heading {
+        padding-bottom: 15px;
+    }
+
+    &__heading {
+       color: $regular-color;
+
+       &:hover {
+		color: $accent-color;
+		background: none; 
+	}
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (min-width: $breakpoint-md) {
+        .service__item {
+            flex: 1 1 calc(50% - 30px);
+            margin-right: 60px;
+    }
+    .service__item:nth-child(2n) {
+        margin-right: 0;
+    }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        .service__item {
+            flex: 1 1 calc(33.33% - 40px);
+            margin-right: 60px;
+    }
+    .service__item:nth-child(2n) {
+        margin-right: 60px;
+    }
+    .service__item:nth-child(3n) {
+        margin-right: 0;
+    }
+    }
+}

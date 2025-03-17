@@ -8,6 +8,37 @@ a {
 		background: $accent-color;
 	}
 }
+.gradient-text {
+	@include text-grad;
+}
+
+h1 {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+
+}
+
+h3 {
+	font-size: $font-size-h3;
+	font-weight: 700;
+}
+h3.caps {
+	font-size: $font-size-h3-caps;
+	text-transform: uppercase;
+	color: $main-color;
+  }
+
+h4 {
+	font-size: 16;
+	font-weight: 700;
+}
 .d-none {
 	display: none;
 }
@@ -32,10 +63,37 @@ a {
 	max-width: 1720px;
 	margin: 0 auto;
 	padding: 0 30px;
+
+	@media (min-width: $breakpoint-md)  {
+		padding: 0 60px ;
+	}
 }
 
 .bg-box {
 	color: $basic-white;
 	background: $gradient-suppersoft;
+	margin-bottom: 60px;
 }
+.cat-link {
+	color: $regular-color;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
 
+	&:after {
+		content: '';
+		width: 9px;
+		height: 9px;
+		border-color: inherit;
+		border-width: 3px 3px 0 0;
+		margin-left: 2px ;
+		border-style: solid;
+		display: inline-block;
+		transform: rotate(45deg);
+
+	}
+	&:hover {
+		color: $accent-color;
+		background: none; 
+	}
+}
