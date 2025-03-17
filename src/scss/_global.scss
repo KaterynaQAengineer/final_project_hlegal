@@ -59,6 +59,7 @@ h4 {
 	overflow: hidden;
 }
 
+
 .container {
 	max-width: 1720px;
 	margin: 0 auto;
@@ -79,6 +80,7 @@ h4 {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
+	cursor: pointer;
 
 	&:after {
 		content: '';

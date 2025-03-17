@@ -11,7 +11,7 @@
     text-align: center;
 
     &__separator {
-        width: 315px;
+        width: calc(100% - 100px);
         height: 2px;
         border: none;
         border-top: 2px solid $separator-color;
@@ -36,6 +36,8 @@
     }
     &__content {
         margin-bottom: 30px;
+
+    }
     }
 
-}
+
